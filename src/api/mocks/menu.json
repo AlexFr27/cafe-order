@@ -1,0 +1,14 @@
+[
+  { "id":"1",  "name":"Cappuccino",     "price":3.5,   "imageUrl":"/images/cappuccino.jpg" },
+  { "id":"2",  "name":"Latte",          "price":4.0,   "imageUrl":"/images/latte.jpg" },
+  { "id":"3",  "name":"Espresso",       "price":2.5,   "imageUrl":"/images/espresso.jpg" },
+  { "id":"4",  "name":"Espresso-tonic", "price":100.5, "imageUrl":"/images/espresso-tonic.jpg" },
+  { "id":"5",  "name":"Scrambled Eggs", "price":5.0,   "imageUrl":"/images/scrambled-eggs.png" },
+  { "id":"6",  "name":"Omelette",       "price":6.5,   "imageUrl":"/images/omelette.png" },
+  { "id":"7",  "name":"French Toast",   "price":7.0,   "imageUrl":"/images/french-toast.png" },
+  { "id":"8",  "name":"Pancakes",       "price":6.0,   "imageUrl":"/images/pancakes.png" },
+  { "id":"9",  "name":"Croissant",      "price":3.0,   "imageUrl":"/images/croissant.png" },
+  { "id":"10", "name":"Waffle",         "price":5.5,   "imageUrl":"/images/waffle.png" },
+  { "id":"11", "name":"Smoothie Bowl",  "price":8.0,   "imageUrl":"/images/smoothie-bowl.png" },
+  { "id":"12", "name":"Avocado Toast",  "price":7.5,   "imageUrl":"/images/avocado-toast.png" }
+]
