@@ -1,5 +1,4 @@
 import React from 'react';
-import { useAppSelector } from '../hooks/useAppSelector';
 import { Route, Routes } from 'react-router-dom';
 import { ROUTES } from '../constants/routes';
 import { ProtectedRoute } from '../components/ProtectedRoute';
@@ -13,8 +12,8 @@ import { NotFoundPage } from '../pages/NotFoundPage';
 import { OrderPage } from '../pages/OrderPage';
 
 export const AppRoutes: React.FC = () => {
-  const roles = useAppSelector(state => state.auth.roles);
-  const isStaff = roles.includes('staff');
+  //const roles = useAppSelector(state => state.auth.roles);
+  //const isStaff = roles.includes('staff');
   return (
     <Routes>
       <Route path={ROUTES.HOME} element={<SplashPage />} />
