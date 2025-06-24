@@ -1,6 +1,7 @@
 {
   "name": "cafe-order-frontend",
   "version": "0.1.0",
+  "homepage": "https://AlexFr27.github.io/cafe-order",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -27,6 +28,7 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.8",
+    "gh-pages": "^6.3.0",
     "jest": "^29.3.1",
     "prettier": "^2.8.0"
   },
@@ -34,6 +36,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "yarn build",
+    "deploy": "yarn build && gh-pages -d build -f",
     "eject": "react-scripts eject"
   },
   "browserslist": {

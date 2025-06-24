@@ -24,7 +24,7 @@ export const OrderPage: React.FC = () => {
       </Alert>
 
       <Typography variant="h5" gutterBottom>
-        Ваш заказ
+        Ваш заказ:
       </Typography>
 
       <Grid container spacing={2}>
@@ -33,9 +33,9 @@ export const OrderPage: React.FC = () => {
             <Card sx={{ display: 'flex', borderRadius: 2 }}>
               <CardMedia
                 component="img"
-                image={item.imageUrl}
+                image={`${process.env.PUBLIC_URL}${item.imageUrl}`}
                 alt={item.name}
-                sx={{ width: 100, height: 80, objectFit: 'cover' }}
+                sx={{ width: 100, height: 100, objectFit: 'cover' }}
               />
               <CardContent>
                 <Typography variant="subtitle1">{item.name}</Typography>

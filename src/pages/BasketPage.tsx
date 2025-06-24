@@ -37,7 +37,7 @@ export const BasketPage: React.FC = () => {
             <Card sx={{ display: 'flex', alignItems: 'center', borderRadius: 2 }}>
               <CardMedia
                 component="img"
-                image={item.imageUrl}
+                image={`${process.env.PUBLIC_URL}${item.imageUrl}`}
                 alt={item.name}
                 sx={{ width: 120, height: 80, objectFit: 'cover', borderRadius: 1 }}
               />
