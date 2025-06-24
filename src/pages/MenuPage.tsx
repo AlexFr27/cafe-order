@@ -19,7 +19,7 @@ export const MenuPage: React.FC = () => {
             <CardMedia
               component="img"
               height="140"
-              image={`${process.env.PUBLIC_URL}${item.imageUrl}`}
+              image={item.imageUrl}
               alt={item.name}
             />
             <CardContent>

@@ -22,7 +22,7 @@ const theme = createTheme({
 export const App: React.FC = () => (
   <ThemeProvider theme={theme}>
     <CssBaseline />
-    <BrowserRouter basename={process.env.PUBLIC_URL ?? ""}>
+    <BrowserRouter>
       <Layout>
         <AppRoutes />
       </Layout>
