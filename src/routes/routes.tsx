@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppSelector } from '../hooks/useAppSelector';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { ROUTES } from '../constants/routes';
 import { ProtectedRoute } from '../components/ProtectedRoute';
-import { HomePage } from '../pages/HomePage';
+import { SplashPage } from '../pages/HomePage';
 import { MenuPage } from '../pages/MenuPage';
 import { OrdersPage } from '../pages/OrdersPage';
 import { BasketPage } from '../pages/BasketPage';
@@ -17,7 +17,7 @@ export const AppRoutes: React.FC = () => {
   const isStaff = roles.includes('staff');
   return (
     <Routes>
-      <Route path={ROUTES.HOME} element={<HomePage />} />
+      <Route path={ROUTES.HOME} element={<SplashPage />} />
       <Route path={ROUTES.MENU} element={<MenuPage />} />
       <Route path={ROUTES.BASKET} element={<BasketPage />} />
       <Route path={ROUTES.ORDER} element={<OrderPage />} />

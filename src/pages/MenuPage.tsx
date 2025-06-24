@@ -12,14 +12,14 @@ export const MenuPage: React.FC = () => {
   if (isLoading) return <div>Loading…</div>;
 
   return (
-    <Grid container spacing={2} sx={{ p: 2 }}>
+    <Grid container marginY={4} spacing={2} sx={{ p: 2 }}>
       {items.map((item) => (
         <Grid item key={item.id} xs={12} sm={6} md={4} lg={3}>
           <Card>
             <CardMedia
               component="img"
               height="140"
-              image={item.imageUrl}
+              image={`${process.env.PUBLIC_URL}${item.imageUrl}`}
               alt={item.name}
             />
             <CardContent>
